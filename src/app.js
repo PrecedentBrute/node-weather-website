@@ -21,7 +21,7 @@ app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
         message: 'Weather is nice',
-        name: 'Moriarty'
+        name: 'PrecedentBrute'
     });
 });
 
@@ -29,8 +29,8 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: "About",
-        message: "This is me",
-        name: "Moriarty"
+        message: "This site was created by PrBr. It uses data from Mapbox and Openweathermap.",
+        name: "PrecedentBrute"
     });
 });
 
@@ -38,7 +38,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         message: "This is help",
         title: "Help",
-        name: "Moriarty"
+        name: "PrecedentBrute"
     });
 });
 
@@ -57,7 +57,7 @@ app.get('/weather', (req, res) => {
            })
         }
     
-        forecast(longitude, latitude, (werror, {temperature, weather} = {}) => {
+        forecast(longitude, latitude, (werror, {temperature, weather, feelsLike} = {}) => {
             if(werror){
                 return res.send({
 
@@ -67,7 +67,8 @@ app.get('/weather', (req, res) => {
             res.send({
                 Place: location,
                 temperature: temperature,
-                Weather: weather
+                Weather: weather,
+                feelsLike: feelsLike
             });
         })
         
