@@ -1,0 +1,23 @@
+h1 {
+    color: rgb(37, 37, 37);
+}
+
+footer{
+    margin: 1rem;
+}
+
+header{
+    margin-top: 1rem;
+}
+
+header a{
+    margin-right: 1rem;
+}
+
+form{
+    margin-top: 3rem;
+}
+
+/* button{
+    cursor: pointer;
+} */

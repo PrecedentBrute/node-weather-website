@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {{>dependent_stylesheets}}
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/images/weather.png">
+
+    <title>Weather</title>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        {{>header}}
+        
+        <form>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Location" aria-label="Location" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-primary" type="button">Search</button>
+                </div>
+            </div>
+        </form>
+
+        <p class="text-center" id="para1">
+
+        </p>
+        
+        <p class="text-center" id="para2">
+
+        </p>
+
+        {{>footer}}
+
+    </div>
+    
+
+
+
+    <script src="/js/app.js"></script>
+
+     {{>dependent_scripts}}
+
+
+</body>
+
+</html>

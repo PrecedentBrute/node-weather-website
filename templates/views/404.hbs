@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    {{>dependent_stylesheets}}
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/images/weather.png">
+
+    <title>Weather</title>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        {{>header}}
+        <p>{{errorMessage}}</p>
+        {{>footer}}
+
+    </div>
+    
+
+
+   
+    {{>dependent_scripts}}
+
+</body>
+
+</html>
